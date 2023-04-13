@@ -19,7 +19,7 @@ token = config.get('telegram', 'token')
 async def start(update: telegram.Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
         [InlineKeyboardButton("Помощь", callback_data='help')],
-        [InlineKeyboardButton("Погода", callback_data='weather'), InlineKeyboardButton("Шутка", callback_data='joke')],
+        [InlineKeyboardButton("Шутка", callback_data='joke')],
         [InlineKeyboardButton("Новости", callback_data='news')],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
