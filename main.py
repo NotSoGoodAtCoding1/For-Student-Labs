@@ -31,8 +31,6 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if callback_data == 'help':
         await help(update, context)
-    elif callback_data == 'weather':
-        await weather(update, context)
     elif callback_data == 'joke':
         await joke(update, context)
     elif callback_data == 'news':
